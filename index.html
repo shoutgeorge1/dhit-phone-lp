@@ -71,6 +71,7 @@
       .hero {
         min-height: 70vh;
         padding: 2rem 1rem;
+        overflow: hidden; /* Prevent hero overlay from covering content below */
       }
 
       .hero-content {
@@ -268,6 +269,8 @@
     .benefits {
       padding: 3rem 1rem;
       background: var(--bg-light);
+      position: relative;
+      z-index: 1; /* Ensure benefits section appears above hero overlay */
     }
 
     .benefits-container {
