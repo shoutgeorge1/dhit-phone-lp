@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="">
+  <title>Rhinoplasty with Natural-Looking Results | Dr. Dhir</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap');
+    
+    :root {
+      --contrast: #000000;
+      --contrast-2: #575760;
+      --contrast-3: #b2b2be;
+      --base: #f0f0f0;
+      --base-2: #f7f8f9;
+      --base-3: #ffffff;
+      --accent: #F08B70;
+      --accent-hover: #d87a62;
+      --muted: #575760;
+      --bg: #ffffff;
+      --bg-light: #f7f8f9;
+      --text-primary: #000000;
+      --text-secondary: #575760;
+      --border: #e5e7eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 1.6em;
+      color: var(--text-primary);
+      background: var(--bg);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-top: 0;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding-top: 60px; /* Space for fixed phone number on mobile */
+      }
+    }
+
+    @media (max-width: 1024px) {
+      body {
+        font-size: 16px;
+      }
+      .hero h1 {
+        font-size: 40px;
+      }
+      .faq h2, .final-cta h2 {
+        font-size: 35px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+      .hero {
+        min-height: 70vh;
+        padding: 2rem 1rem;
+      }
+
+      .hero-content {
+        padding: 2rem 1.5rem;
+      }
+
+      .hero h1 {
+        font-size: 35px;
+      }
+      .faq h2, .final-cta h2 {
+        font-size: 30px;
+      }
+      .cta-primary {
+        font-size: 15px;
+        padding: 18px 30px;
+      }
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem;
+      background: var(--base-3);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('assets/hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.6;
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.85) 100%);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 3rem 2.5rem;
+      border-radius: 0;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(8px);
+    }
+
+    @media (min-width: 769px) {
+      .hero::before {
+        opacity: 0.75;
+      }
+      .hero::after {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.7) 100%);
+      }
+      .hero-content {
+        background: rgba(255, 255, 255, 0.92);
+      }
+    }
+
+    .hero h1 {
+      font-family: 'Noto Serif Display', serif;
+      font-size: clamp(35px, 6vw, 65px);
+      font-weight: 300;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+      line-height: 1.2em;
+      letter-spacing: 0;
+    }
+
+    .hero .subhead {
+      font-size: clamp(16px, 2vw, 20px);
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    .trust-bullets {
+      list-style: none;
+      margin: 1.5rem 0;
+      text-align: left;
+    }
+
+    .trust-bullets li {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      color: var(--text-secondary);
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    .trust-bullets li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .cta-primary {
+      background: linear-gradient(135deg, var(--contrast) 0%, #2a2a2a 100%);
+      color: white;
+      padding: 20px 60px;
+      border-radius: 0;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin: 1rem 0.5rem 0.5rem 0;
+      transition: all 0.3s ease, transform 0.2s ease;
+      min-height: 44px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .cta-primary:hover::before {
+      left: 100%;
+    }
+
+    .cta-primary:hover,
+    .cta-primary:focus {
+      background: linear-gradient(135deg, #2a2a2a 0%, var(--contrast) 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .cta-secondary {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-bottom: 2px solid var(--accent);
+      transition: color 0.3s ease;
+      letter-spacing: 1px;
+    }
+
+    .cta-secondary:hover,
+    .cta-secondary:focus {
+      color: var(--accent-hover);
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .micro-copy {
+      font-size: 16px;
+      color: var(--muted);
+      margin-top: 1rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    /* Benefits Strip */
+    .benefits {
+      padding: 3rem 1rem;
+      background: var(--bg-light);
+    }
+
+    .benefits-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .benefit-card {
+      text-align: center;
+      padding: 2rem;
+      background: var(--bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .benefit-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 1rem;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .benefit-card h3 {
+      font-family: 'Noto Serif Display', serif;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+    }
+
+    .benefit-card p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    .benefit-cta {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      display: inline-block;
+      margin-top: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    .benefit-cta:hover,
+    .benefit-cta:focus {
+      color: var(--accent-hover);
+      text-decoration: underline;
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* Photo Panel */
+    .photo-panel {
+      padding: 3rem 1rem;
+      background: var(--bg);
+    }
+
+    .photo-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .photo-item {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      position: relative;
+      aspect-ratio: 2 / 1.1; /* Wider aspect ratio, less zoom */
+    }
+
+    .photo-item img {
+      position: absolute;
+      top: -8%; /* Shift up more to crop bottom text */
+      left: 0;
+      width: 100%;
+      height: 115%; /* Increase height to show more, but crop bottom */
+      display: block;
+      object-fit: cover;
+      object-position: center 25%; /* Focus on upper-center area to avoid bottom text */
+      transform: scale(0.90); /* Slightly zoomed out */
+    }
+
+    /* FAQ Section */
+    .faq {
+      padding: 3rem 1rem;
+      background: var(--bg-light);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq h2 {
+      font-family: 'Noto Serif Display', serif;
+      font-size: clamp(30px, 4vw, 50px);
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--text-primary);
+      line-height: 1.2em;
+    }
+
+    .faq-item {
+      background: var(--bg);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-item h3 {
+      font-family: 'Noto Serif', serif;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+      text-transform: capitalize;
+    }
+
+    .faq-item p {
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    .faq-cta {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    .faq-cta:hover,
+    .faq-cta:focus {
+      color: var(--accent-hover);
+      text-decoration: underline;
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* Final CTA */
+    .final-cta {
+      padding: 4rem 1rem;
+      background: var(--contrast);
+      color: white;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-family: 'Noto Serif Display', serif;
+      font-size: clamp(35px, 4vw, 50px);
+      font-weight: 300;
+      margin-bottom: 1rem;
+      line-height: 1.2em;
+    }
+
+    .final-cta p {
+      font-size: 20px;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    .final-cta .cta-primary {
+      background: white;
+      color: var(--contrast);
+      font-size: 20px;
+      padding: 20px 60px;
+    }
+
+    .final-cta .cta-primary:hover,
+    .final-cta .cta-primary:focus {
+      background: var(--bg-light);
+      outline: 2px solid white;
+      outline-offset: 2px;
+    }
+
+    /* Utility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    /* CallRail wrapper */
+    .cr-phone {
+      /* CallRail will wrap phone numbers when enabled */
+      display: inline;
+    }
+
+    /* Top Phone Number */
+    .top-phone {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1001;
+      background: rgba(255, 255, 255, 0.98);
+      padding: 1rem 1.5rem;
+      border-bottom-left-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .top-phone a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .top-phone a:hover,
+    .top-phone a:focus {
+      color: var(--accent-hover);
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+
+    @media (max-width: 768px) {
+      .top-phone {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        border-bottom-left-radius: 0;
+        border-bottom: 1px solid var(--border);
+      }
+    }
+
+    /* Hero background image cropping - remove bottom 20-30% */
+    .hero::before {
+      background-size: cover;
+      background-position: center top;
+      height: 130%; /* Show top 70-80%, crop bottom 20-30% */
+      top: 0;
+    }
+
+    @media (min-width: 769px) {
+      .hero::before {
+        height: 80%; /* Crop bottom 20% - show only top 80% of image */
+        background-size: cover;
+        background-position: center 15%; /* Focus on upper portion */
+        bottom: 0;
+      }
+      .hero {
+        min-height: 65vh; /* Further reduce height on desktop */
+      }
+    }
+  </style>
+</head>
+<body data-callrail="false">
+  <!-- Top Phone Number -->
+  <div class="top-phone">
+    <a href="#" id="topPhoneLink" aria-label="Call phone number"></a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" role="banner">
+    <div class="hero-content">
+      <h1>Rhinoplasty with Natural-Looking Results</h1>
+      <p class="subhead">Speak directly with our patient coordinator to get answers in minutes.</p>
+      
+      <ul class="trust-bullets">
+        <li>Board-certified surgeon</li>
+        <li>Personalized treatment plans</li>
+        <li>Focused on balanced, natural aesthetics</li>
+        <li>Thoughtful guidance on recovery & scheduling</li>
+      </ul>
+
+      <a href="#" class="cta-primary" id="heroPrimaryCta" aria-label="Call now to speak with our patient coordinator">Speak with a Coordinator Now</a>
+      <br>
+      <a href="#" class="cta-secondary" id="heroSecondaryCta" aria-label="Get instant answers by phone">Get Instant Answers by Phone</a>
+      
+      <p class="micro-copy">No forms. Quick call. Real answers.</p>
+    </div>
+  </section>
+
+  <!-- Benefits Strip -->
+  <section class="benefits" aria-labelledby="benefits-heading">
+    <h2 id="benefits-heading" class="sr-only">Benefits of Choosing Our Practice</h2>
+    <div class="benefits-container">
+      <div class="benefit-card">
+        <div class="benefit-icon">✓</div>
+        <h3>See if you're a candidate</h3>
+        <p>Quick phone consultation to discuss your options and candidacy in just 2 minutes.</p>
+        <a href="#" class="benefit-cta" aria-label="Call to see if you're a candidate">Check Your Candidacy Now →</a>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon">⏱</div>
+        <h3>Recovery & Scheduling</h3>
+        <p>Get personalized guidance on recovery time and available scheduling options.</p>
+        <a href="#" class="benefit-cta" aria-label="Call to ask about recovery time and scheduling">Learn Recovery Timeline →</a>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon">💰</div>
+        <h3>Pricing & Availability</h3>
+        <p>Transparent pricing information and current availability for consultations.</p>
+        <a href="#" class="benefit-cta" aria-label="Call for pricing and availability today">Get Pricing Info →</a>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon">📋</div>
+        <h3>Before/After Guidance</h3>
+        <p>Expert guidance on what to expect before and after your procedure.</p>
+        <a href="#" class="benefit-cta" aria-label="Call for before and after guidance">See What to Expect →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Panel -->
+  <section class="photo-panel" aria-label="Rhinoplasty results">
+    <div class="photo-container">
+      <div class="photo-item">
+        <img src="assets/hero-image.jpg" alt="Rhinoplasty patient results showing natural-looking nose refinement" width="600" height="400">
+      </div>
+      <div class="photo-item">
+        <img src="assets/gallery-1.jpg" alt="Rhinoplasty patient results demonstrating balanced facial harmony" width="600" height="400">
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq" aria-labelledby="faq-heading">
+    <div class="faq-container">
+      <h2 id="faq-heading">Common Questions</h2>
+      
+      <div class="faq-item">
+        <h3>What is the recovery time after rhinoplasty?</h3>
+        <p>Recovery typically involves 7-14 days of initial downtime. Most patients can return to normal activities after the first week, with full healing taking several weeks. Call to discuss your specific situation and recovery timeline.</p>
+        <a href="#" class="faq-cta" aria-label="Call to discuss recovery time">Get Your Recovery Plan →</a>
+      </div>
+      
+      <div class="faq-item">
+        <h3>How much downtime does rhinoplasty require?</h3>
+        <p>We recommend about 7-14 days of downtime for the initial recovery period. This allows for proper healing and optimal results. Call to learn more about the recovery process.</p>
+        <a href="#" class="faq-cta" aria-label="Call to learn about downtime requirements">Plan Your Schedule →</a>
+      </div>
+      
+      <div class="faq-item">
+        <h3>What type of anesthesia is used?</h3>
+        <p>Rhinoplasty is typically performed under general anesthesia to ensure your comfort throughout the procedure. Call to discuss anesthesia options and what to expect.</p>
+        <a href="#" class="faq-cta" aria-label="Call to discuss anesthesia options">Ask About Anesthesia →</a>
+      </div>
+      
+      <div class="faq-item">
+        <h3>Am I a good candidate for rhinoplasty?</h3>
+        <p>Good candidates are generally in good health, have realistic expectations, and are ready for open communication about their goals. Call to see if rhinoplasty is right for you.</p>
+        <a href="#" class="faq-cta" aria-label="Call to see if you're a candidate">Find Out If You Qualify →</a>
+      </div>
+      
+      <div class="faq-item">
+        <h3>Will there be visible scarring?</h3>
+        <p>For closed rhinoplasty, all incisions are made inside the nostrils with no visible scarring. Open techniques use minimal incisions in discreet locations. Call to discuss which approach is best for you.</p>
+        <a href="#" class="faq-cta" aria-label="Call to discuss scarring concerns">Learn About Scarring →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta" aria-labelledby="final-cta-heading">
+    <h2 id="final-cta-heading">Ready to talk?</h2>
+    <p>Speak with our patient coordinator today</p>
+    <a href="#" class="cta-primary" id="finalCta" aria-label="Call now to speak with our patient coordinator">Start Your Consultation Call</a>
+  </section>
+
+  <script>
+    (function() {
+      'use strict';
+
+      // Phone number configuration
+      const DEFAULT_PHONE = '+13107801082';
+      const DEFAULT_PHONE_DISPLAY = '(310) 780-1082';
+
+      // Parse URL parameter for phone number
+      function getPhoneFromURL() {
+        const params = new URLSearchParams(window.location.search);
+        const telParam = params.get('tel');
+        if (!telParam) return null;
+
+        // Normalize: strip all non-digits
+        const digits = telParam.replace(/\D/g, '');
+        
+        // If 10 digits, assume US number and add +1
+        if (digits.length === 10) {
+          return '+1' + digits;
+        }
+        
+        // If 11 digits and starts with 1, add +
+        if (digits.length === 11 && digits[0] === '1') {
+          return '+' + digits;
+        }
+        
+        // If already has country code
+        if (digits.length > 10) {
+          return '+' + digits;
+        }
+
+        return null;
+      }
+
+      // Format phone for display: (XXX) XXX-XXXX
+      function formatPhoneDisplay(phone) {
+        const digits = phone.replace(/\D/g, '');
+        if (digits.length === 11 && digits[0] === '1') {
+          const area = digits.substring(1, 4);
+          const first = digits.substring(4, 7);
+          const last = digits.substring(7);
+          return `(${area}) ${first}-${last}`;
+        }
+        if (digits.length === 10) {
+          const area = digits.substring(0, 3);
+          const first = digits.substring(3, 6);
+          const last = digits.substring(6);
+          return `(${area}) ${first}-${last}`;
+        }
+        return phone;
+      }
+
+      // Get the phone number to use
+      const phoneNumber = getPhoneFromURL() || DEFAULT_PHONE;
+      const phoneDisplay = formatPhoneDisplay(phoneNumber);
+      const telLink = 'tel:' + phoneNumber;
+
+      // Check for CallRail
+      const useCallRail = document.body.getAttribute('data-callrail') === 'true';
+      const phoneClass = useCallRail ? 'cr-phone' : '';
+
+      // Update all phone links
+      function updatePhoneLinks() {
+        const phoneLinks = document.querySelectorAll('a[href="#"]');
+        phoneLinks.forEach(link => {
+          const currentAriaLabel = link.getAttribute('aria-label') || '';
+          link.href = telLink;
+          if (currentAriaLabel && !currentAriaLabel.includes(phoneDisplay)) {
+            link.setAttribute('aria-label', currentAriaLabel + ' ' + phoneDisplay);
+          }
+          
+          // Wrap phone number text in CallRail span if enabled
+          if (useCallRail && link.textContent) {
+            const text = link.textContent;
+            if (text.includes(phoneDisplay)) {
+              link.innerHTML = text.replace(phoneDisplay, `<span class="${phoneClass}">${phoneDisplay}</span>`);
+            }
+          }
+        });
+
+        // Update top phone link
+        const topPhoneLink = document.getElementById('topPhoneLink');
+        if (topPhoneLink) {
+          topPhoneLink.href = telLink;
+          topPhoneLink.setAttribute('aria-label', 'Call ' + phoneDisplay);
+          if (useCallRail) {
+            topPhoneLink.innerHTML = `<span class="${phoneClass}">${phoneDisplay}</span>`;
+          } else {
+            topPhoneLink.textContent = phoneDisplay;
+          }
+        }
+
+      }
+
+      // Analytics tracking
+      function trackCallClick(element) {
+        // Google Tag Manager
+        if (typeof dataLayer !== 'undefined') {
+          dataLayer.push({
+            event: 'tel_click',
+            tel: phoneNumber
+          });
+        }
+
+        // Google Analytics
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'click_to_call', {
+            value: 1
+          });
+        }
+      }
+
+      // Initialize
+      updatePhoneLinks();
+
+      // Add click tracking to all call buttons
+      document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+        link.addEventListener('click', function() {
+          trackCallClick(this);
+        });
+      });
+
+      // CallRail script placeholder (commented out - uncomment and add your CallRail code if enabled)
+      /*
+      if (useCallRail) {
+        // Add your CallRail script here
+        // Example:
+        // (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"YOUR_TRACKING_ID"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+      }
+      */
+    })();
+  </script>
+</body>
+</html>
+
